@@ -1,0 +1,321 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    border-bottom: 4px solid black;
+}
+
+.header .top_msg {
+    width: 980px;
+    height: 76px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .top_msg img {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.header .top_msg ul {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    list-style: none;
+    background: url("../image/login/login_top.gif") no-repeat;
+}
+
+.header .top_msg ul li {
+    width: 130px;
+    height: 32px;
+    float: left;
+    margin-right: 25px;
+}
+
+.header .top_msg ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 980px;
+    height: 502px;
+    margin: 20px auto;
+    border: 1px solid #e2e2e2;
+    position: relative;
+}
+
+.content_reg {
+    height: 602px;
+}
+
+.content .content_top {
+    width: 100%;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.content .content_top .hd {
+    display: inline-block;
+    width: 100px;
+    color: #ff3366;
+    font: 16px "微软雅黑", "宋体";
+    background: url("../image/login/hd-bg.gif") no-repeat right;
+}
+
+.content .content_top .tips {
+    color: #666;
+    font-size: 12px;
+}
+
+.content .content_top .other {
+    color: #999;
+    font-size: 14px;
+    float: right;
+}
+
+.content .content_top a {
+    color: #0289cd;
+}
+
+.add_underLine:hover {
+    text-decoration: underline;
+}
+
+.content .content_main {
+    width: 490px;
+    height: 302px;
+    margin-top: 20px;
+}
+
+.content .content_main .main_left {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content .content_main .main_right a {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    right: 50px;
+    top: 140px;
+    background: url("../image/login/loginshow.png") no-repeat;
+}
+
+.content .content_main .main_right_reg a {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    right: 50px;
+    top: 137px;
+    background: url("../image/login/registershow.png") no-repeat;
+}
+
+.reg_msg {
+    width: 110px;
+    text-align: right;
+}
+.login_msg {
+    width: 48px;
+}
+
+.content .content_main .main_left table #s_code {
+    width: 120px;
+}
+
+.content .content_main .main_left table {
+    margin: 0 auto;
+}
+
+.content .content_main .main_left table tr {
+    display: block;
+    margin-top: 25px;
+}
+.content .content_main .main_left table .marked_words{
+    margin-top: 0;
+    margin-bottom: -25px;
+}
+/*警示语样式*/
+.content .content_main .main_left table .marked_words .marked_words_style{
+    display: block;
+    height: 25px;
+    color: #f00;
+}
+.content .content_main .main_left table .other_label {
+    margin-left: 50px;
+    position: relative;
+    font-size: 12px;
+}
+
+.content .content_main .main_left table .other_label label {
+    color: #5e5e5e;
+    position: absolute;
+    top: -13px;
+    left: 14px;
+}
+
+.content .content_main .main_left table .other_label .line {
+    width: 140px;
+    height: 1px;
+    background: #e2e2e2;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.content .content_main .main_left table .other_label .third_party_btn a {
+    background: url("../image/login/new-login.gif") no-repeat;
+    position: absolute;
+    top: -14px;
+}
+
+/*分割线*/
+.underLine {
+    height: 2px;
+    width: 290px;
+    border-top: #e2e2e2 solid 1px;
+    border-bottom: #e2e2e2 solid 1px;
+    position: absolute;
+    bottom: 140px;
+    right: 111px;
+}
+
+/*第三方链接位置*/
+.content .content_main .main_left table .move_reg {
+    position: absolute;
+    bottom: 0;
+    right: -83px;
+}
+
+.content .content_main .main_left table .other_label .third_party_btn .qq {
+    background-position: -180px -166px;
+    width: 72px;
+    height: 24px;
+}
+
+
+.content .content_main .main_left table .other_label .third_party_btn .taobao {
+    width: 24px;
+    height: 24px;
+    left: 85px;
+    background-position: 0 -140px;
+}
+
+.content .content_main .main_left table .other_label .third_party_btn .pdd {
+    width: 24px;
+    height: 24px;
+    left: 119px;
+    background-position: -210px -246px;
+}
+
+.content .content_main .main_left table .other_label .third_party_btn .qq:hover {
+    background-position: -180px -140px;
+}
+
+.content .content_main .main_left table .other_label .third_party_btn .taobao:hover {
+    background-position: -27px -140px;
+}
+
+.content .content_main .main_left table .other_label .third_party_btn .pdd:hover {
+    background-position: -236px -246px;
+}
+
+.content .content_main .main_left table .forgetPwd {
+    display: inline-block;
+    margin-left: 196px;
+    margin-top: -40px;
+}
+
+.content .content_main .main_left table .autoLogin {
+    display: inline-block;
+    margin-top: -30px;
+}
+.content .content_main .main_left table .part_trim{
+    display: block;
+    margin-top: 34px;
+}
+
+.content .content_main .main_left table .autoAgree {
+    width: 220px;
+    position: relative;
+    left: 57px;
+}
+
+.content .content_main .main_left table .autoAgree #ready_ok {
+    position: relative;
+    top: -10px;
+}
+
+.content .content_main .main_left table .forgetPwd a {
+    color: #999;
+}
+
+.content .content_main .main_left table #uname, #upwd, #cpwd, #s_code, #invite_number {
+    width: 236px;
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #c6c6c6;
+    outline: none;
+}
+
+.content .content_main .main_left table #uname:focus, #upwd:focus, #cpwd:focus, #s_code:focus, #invite_number:focus {
+    border: 1px solid #ff3366;
+}
+
+.content .content_main .main_left table .btn_login, .btn_register {
+    width: 260px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: url("../image/login/new-login.gif") no-repeat;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: -29px;
+}
+
+.content .content_main .main_left table .btn_register {
+    left: 60px;
+}
+
+.content .content_main .main_left table .btn_login:hover, .btn_register:hover {
+    background-position: 0 -45px;
+}
+
+.footer p {
+    text-align: center;
+    margin: 40px auto 40px;
+    width: 900px;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+
+.footer p a {
+    color: #5e5e5e;
+}
+
+.footer p a:hover {
+    color: #f00;
+}
+
+/*验证码*/
+canvas {
+    width: 105px;
+    height: 38px;
+    border: 1px solid #666;
+    vertical-align: bottom;
+    cursor: pointer;
+}

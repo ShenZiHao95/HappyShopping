@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>用户注册</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="header">
+  <div class="top_msg">
+    <a href="index.html"><img src="image/headImage/logo.png" alt=""></a>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </div>
+</div>
+<div class="content content_reg">
+  <div class="content_top">
+    <span class="hd">新用户注册</span>
+    <span class="tips">注册快乐购物街，得积分换好礼！</span>
+    <p class="other">已有账号，<a target="_blank" href="login.html" class="add_underLine">立即登录</a></p>
+  </div>
+  <div class="content_main">
+    <div class="main_left">
+      <table>
+        <tr>
+          <td class="reg_msg"><span class="$uname">用户名：</span></td>
+          <td colspan="2"><input type="text" placeholder="请输入用户名" id="uname" class="userMsg" onblur="judgeUname(1);">
+          </td>
+        </tr>
+        <tr class="marked_words">
+          <td class="reg_msg"></td>
+          <td colspan="2"><span class="uname_judge marked_words_style"></span></td>
+        </tr>
+        <tr>
+          <td class="reg_msg"><span class="$upwd">创建密码：</span></td>
+          <td colspan="2"><input type="password" placeholder="请输入密码" id="upwd" class="userMsg" onblur="judgeUpwd(1);">
+          </td>
+        </tr>
+        <tr class="marked_words">
+          <td class="reg_msg"></td>
+          <td colspan="2"><span class="upwd_judge marked_words_style"></span></td>
+        </tr>
+        <tr>
+          <td class="reg_msg"><span class="$cpwd">确认密码：</span></td>
+          <td colspan="2"><input type="password" placeholder="请确认密码" id="cpwd" class="userMsg" onblur="judgeUcpwd();">
+          </td>
+        </tr>
+        <tr class="marked_words">
+          <td class="reg_msg"></td>
+          <td colspan="2"><span class="cpwd_judge marked_words_style"></span></td>
+        </tr>
+        <tr>
+          <td class="reg_msg"><span class="security_code">验证码：</span></td>
+          <td><input type="text" placeholder="验证码" id="s_code" class="userMsg"></td>
+          <td>
+            <canvas id="can_code" onclick="dj();" title="看不清，换一张"></canvas>
+          </td>
+        </tr>
+        <tr class="marked_words">
+          <td class="reg_msg"></td>
+          <td colspan="2"><span class="s_code_judge marked_words_style"></span></td>
+        </tr>
+        <tr>
+          <td class="reg_msg"><span class="$cpwd">邀请者(选填)：</span></td>
+          <td colspan="2"><input type="text" placeholder="邀请者手机号或QQ号" id="invite_number" class="userMsg"></td>
+        </tr>
+        <tr class="other_label">
+          <td></td>
+          <td colspan="2" class="autoAgree"><input type="checkbox" id="ready_ok" checked value="1" onchange="changeChenkBoxValue();"><label
+                  for="ready_ok">我已看过并同意<a href="" autoLogin>《网络服务使用协议》</a></label></td>
+        </tr>
+        <tr class="other_label">
+          <td></td>
+          <td colspan="2"><a class="btn_register" onclick="judgeS_code();">提交注册</a></td>
+        </tr>
+        <tr class="other_label move_reg">
+          <td></td>
+          <td colspan="2" class="third_party_btn">
+            <a href="" class="qq"></a>
+            <a href="" class="taobao"></a>
+            <a href="" class="pdd"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="main_right_reg"><a href=""></a></div>
+    <div class="underLine"></div>
+  </div>
+</div>
+<div class="footer">
+  <p class="foot-tips">快乐购物街<a href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank">蜀ICP备17002516号</a>
+    Copyright © 2010 - 2019 http://www.klgwj.com/ All Rights Reserved</p>
+</div>
+<script type="text/javascript" src="html_js/securityCode.js"></script>
+<script type="text/javascript" src="html_js/judgeUserMsg.js"></script>
+<script type="text/javascript" src="html_js/login.js"></script>
+</body>
+</html>

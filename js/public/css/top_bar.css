@@ -1,0 +1,267 @@
+@charset "UTF-8";
+#top_bar .top_bar_left {
+    width: 15.5%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 2px 10px 1px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+#top_bar .top_bar_middle {
+    width: 58.5%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#top_bar .top_bar_right {
+    width: 26%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    float: right;
+    background: #fff;
+}
+#top_bar .top_bar_left dl {
+    width: 100%;
+    height: 100%;
+}
+#top_bar .top_bar_left dl dd {
+    width: 50%;
+    height: 51px;
+    float: left;
+    line-height: 51px;
+}
+#top_bar .top_bar_left .top_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background: url("../image/top_bar/ct_icons.png") no-repeat 0 0;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+#top_bar .top_bar_left .top_img_woman {
+    background-position: 0 0;
+}
+#top_bar .top_bar_left .top_img_man {
+    background-position: -24px 0;
+}
+#top_bar .top_bar_left .top_img_shoe {
+    background-position: -48px 0;
+}
+#top_bar .top_bar_left .top_img_box {
+    background-position: -72px 0;
+}
+#top_bar .top_bar_left .top_img_baby {
+    background-position: -96px 0;
+}
+#top_bar .top_bar_left .top_img_ps {
+    background-position: -120px 0;
+}
+#top_bar .top_bar_left .top_img_house {
+    background-position: -144px 0;
+}
+#top_bar .top_bar_left .top_img_textiles {
+    background-position: -168px 0;
+}
+#top_bar .top_bar_left .top_img_sports {
+    background-position: -192px 0;
+}
+#top_bar .top_bar_left .top_img_foods {
+    background-position: -216px 0;
+}
+#top_bar .top_bar_left .top_img_numcode {
+    background-position: -240px 0;
+}
+#top_bar .top_bar_left .top_img_electric {
+    background-position: -264px 0;
+}
+#top_bar .top_bar_left .top_img_underwear {
+    background-position: -288px 0;
+}
+#top_bar .top_bar_left .top_img_acc {
+    background-position: -312px 0;
+}
+#top_bar .top_bar_left dl dd a {
+    font-size: 14px;
+}
+#top_bar .top_bar_left dl dd a:hover {
+    color: red;
+}
+#top_bar .top_bar_left dl dd .separate {
+    margin-left: 10px;
+    color: #eee;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_woman {
+    background-position: 0 -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_man {
+    background-position: -24px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_shoe {
+    background-position: -48px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_box {
+    background-position: -72px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_baby {
+    background-position: -96px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_ps {
+    background-position: -120px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_house {
+    background-position: -144px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_textiles {
+    background-position: -168px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_sports {
+    background-position: -192px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_foods {
+    background-position: -216px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_numcode {
+    background-position: -240px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_electric {
+    background-position: -264px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_underwear {
+    background-position: -288px -24px;
+}
+#top_bar .top_bar_left dl dd a:hover .top_img_acc {
+    background-position: -312px -24px;
+}
+
+@keyframes bannerPic {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(0);
+    }
+    35% {
+        transform: translateX(-702px);
+    }
+    60% {
+        transform: translateX(-702px);
+    }
+    65% {
+        transform: translateX(-1404px);
+    }
+    95% {
+        transform: translateX(-1404px);
+    }
+    100% {
+        transform: translateX(-2106px);
+    }
+}
+
+#top_bar .top_bar_middle .slideshow {
+    width: 2808px;
+    animation: bannerPic 15s linear infinite;
+}
+/*动画实现轮播图（后续其他方式实现）*/
+#top_bar .top_bar_middle .slideshow div {
+    width: 702px;
+    height: 360px;
+    float: left;
+
+}
+/*轮播图上左右控制按钮*/
+#top_bar .top_bar_middle ul li > a {
+    display: block;
+    width: 40px;
+    height: 60px;
+    background: rgba(155, 155, 155, 0.5);
+    opacity: 0;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    text-decoration: none;
+}
+#top_bar .top_bar_middle ul li > a:hover {
+    opacity: 1;
+    background: rgba(155, 155, 155, 0.5);
+}
+#top_bar .top_bar_middle ul .banner_c_left > a {
+    left: 0;
+}
+
+#top_bar .top_bar_middle ul .banner_c_right > a {
+    right: 0;
+}
+
+.banner_1 {
+    background: url("../image/top_bar/01.png") no-repeat center;
+}
+.banner_2 {
+    background: url("../image/top_bar/02.jpg") no-repeat center;
+}
+.banner_3 {
+    background: url("../image/top_bar/03.png") no-repeat center;
+}
+.banner_4 {
+    background: url("../image/top_bar/01.png") no-repeat center;
+}
+
+#top_bar .top_bar_right div {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+.top_bar_right .bar_r_img {
+    width: 100px;
+    height: 110px;
+}
+.top_bar_right .bar_r_msg {
+    position: absolute;
+    top: 1px;
+    left: 115px;
+}
+.top_bar_right .bar_r_msg b {
+    color: #222;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.top_bar_right .bar_r_msg p {
+    color: #666;
+    line-height: 15px;
+    text-align: left;
+}
+#top_bar .top_bar_right .bar_r_right {
+    border-bottom: none;
+}
+
+/*商品标签扩展div*/
+.details_product {
+    width: 702px;
+    height: 360px;
+    background: #aeaeae;
+    position: absolute;
+    top: 0;
+    left: 186px;
+    display: none;
+}
+#top_bar .top_bar_left dl dd:hover > .details_product {
+    display: block;
+    z-index: 1;
+}
+
+/*details 标签样式*/
+#top_bar .top_bar_left .details_product .details_top, .other_product {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script type="text/javascript" src="html_js/judgeUserMsg.js"></script>
+  <script type="text/javascript" src="html_js/login.js"></script>
+</head>
+<body>
+<div class="header">
+  <div class="top_msg">
+    <a href="index.html"><img src="image/headImage/logo.png" alt=""></a>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="content_top">
+    <span class="hd">老用户登录</span>
+    <span class="tips">尊敬的用户，欢迎您回来！</span>
+    <p class="other">还没有账号，<a target="_blank" href="register.html" class="add_underLine">立即去注册</a></p>
+  </div>
+  <div class="content_main">
+    <div class="main_left">
+      <table>
+        <tr>
+          <td><span class="$uname">账号：</span></td>
+          <td colspan="2"><input type="text" placeholder="用户名/邮箱" id="uname" class="userMsg" onblur="judgeUname(0);">
+          </td>
+        </tr>
+        <tr class="marked_words">
+          <td class="login_msg"></td>
+          <td colspan="2"><span class="uname_judge marked_words_style"></span></td>
+        </tr>
+        <tr>
+          <td><span class="$upwd">密码：</span></td>
+          <td colspan="2"><input type="password" placeholder="请输入密码" id="upwd" class="userMsg" onblur="judgeUpwd(0);">
+          </td>
+        </tr>
+        <tr class="marked_words">
+          <td class="login_msg"></td>
+          <td colspan="2"><span class="upwd_judge marked_words_style"></span></td>
+        </tr>
+        <tr class="other_label part_trim">
+          <td></td>
+          <td class="autoLogin"><input type="checkbox" id="twoWeek_autoLogin" checked><label
+                  for="twoWeek_autoLogin">两周内免登录</label></td>
+          <td class="forgetPwd"><span><a href="" class="add_underLine">忘记密码?</a></span></td>
+        </tr>
+        <tr class="other_label">
+          <td></td>
+          <td colspan="2"><a href="javascript:user_login();" class="btn_login">登录</a></td>
+        </tr>
+        <tr class="other_label">
+          <td></td>
+          <td class="third_party">合作网站账号登陆</td>
+          <td>
+            <span class="line"></span>
+          </td>
+        </tr>
+        <tr class="other_label">
+          <td></td>
+          <td colspan="2" class="third_party_btn">
+            <a href="" class="qq"></a>
+            <a href="" class="taobao"></a>
+            <a href="" class="pdd"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="main_right"><a href=""></a></div>
+  </div>
+</div>
+<div class="footer">
+  <p class="foot-tips">快乐购物街<a href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank">蜀ICP备17002516号</a>
+    Copyright © 2010 - 2019 http://www.klgwj.com/ All Rights Reserved</p>
+</div>
+</body>
+</html>
